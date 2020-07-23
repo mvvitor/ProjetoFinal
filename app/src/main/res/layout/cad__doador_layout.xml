@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo_cadastro"
+    android:orientation="vertical"
+    tools:context=".Cad_Doador_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtNomeCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/nome"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtNomeCadCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNomeCad"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:hint="@string/digite_um_nome"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtEmailCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNomeCadCampo"
+            android:layout_marginTop="6dp"
+            android:text="@string/e_mail_cadastro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtEmailCadCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmailCad"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:hint="@string/digite_um_email"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtBairroCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmailCadCampo"
+            android:layout_marginTop="6dp"
+            android:text="@string/bairro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtBairroCadCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBairroCad"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:hint="@string/digite_um_bairro"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtCidadeCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBairroCadCampo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/cidade"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtCidadeCadCampo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCidadeCad"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtEstadoCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBairroCad"
+            android:layout_alignTop="@+id/txtCidadeCad"
+            android:layout_marginStart="138dp"
+            android:layout_toEndOf="@+id/txtCidadeCad"
+            android:text="@string/estado"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEstadoCadCampo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEstadoCad"
+            android:layout_alignTop="@id/txtCidadeCadCampo"
+            android:layout_marginStart="112dp"
+            android:layout_toEndOf="@id/txtCidadeCadCampo"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtAlimentoDoadoCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEstadoCadCampo"
+            android:layout_marginTop="28dp"
+            android:gravity="center|top"
+            android:text="@string/alimento_a_ser_doado"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtAlimentoDoadoCadCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAlimentoDoadoCad"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtQuantidadeCad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAlimentoDoadoCadCampo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/quantidade"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtQuantidadeCadCampo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtQuantidadeCad"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btnVoltarCad"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtQuantidadeCadCampo"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/voltar"
+            android:onClick="janelaVoltarMain"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/btnAvancarCad"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnVoltarCad"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btnVoltarCad"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/proximo"
+            android:onClick="abrirJanelaSplashDoador"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

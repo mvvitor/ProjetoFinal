@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo_cadastro"
+    android:orientation="vertical"
+    tools:context=".Home_Activity">
+
+    <FrameLayout
+        android:id="@+id/idframeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgEtec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/etec"
+                android:contentDescription="@string/logoetec" />
+
+            <TextView
+                android:id="@+id/txtHomeNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEtec"
+                android:text="@string/um_trabalho_de"
+                android:textColor="#F70F0F10"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNome1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHomeNome"
+                android:text="@string/vitor_viana_soares_messias"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtNome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNome1"
+                android:text="@string/robert_de_souza_monteiro"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtNome3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNome2"
+                android:text="@string/gustavo_ara_jo_da_silva"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtNome4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNome3"
+                android:text="@string/yasmin_luize_costa_macedo"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtNome5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNome4"
+                android:text="@string/michaelle_louise_sim_o_pereira"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtHomeNomeParticipantes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desenvolvedor_vitor_messias"
+                android:textColor="#7A000000"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/idBottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#0851E4"
+            app:menu="@menu/menu_de_botao" />
+
+    </FrameLayout>
+</LinearLayout>

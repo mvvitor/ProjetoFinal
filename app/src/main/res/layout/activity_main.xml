@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/imagemlogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="120dp"
+        android:layout_marginStart="100dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Nome_App"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/limos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="250dp"
+        android:layout_marginStart="90dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtBemVindo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/bem_vindo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="90dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnDoar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/botao_com_cor"
+            android:hint="@string/doar_agora"
+            android:textColorHint="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold|normal"
+            android:onClick="abrirJanelaDoarDoador"/>
+
+        <Button
+            android:id="@+id/btnCadastre_se"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnDoar"
+            android:background="@drawable/botao_com_cor"
+            android:hint="@string/cadastre_se"
+            android:textColorHint="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold|normal"
+            android:onClick="abrirJanelaCadastroInstituicao"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+
+        <ImageButton
+            android:id="@+id/btnSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sobre_outline"
+            android:onClick="abrirJanelaSobre"
+            android:contentDescription="@string/sobre" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="210dp"
+        android:gravity="bottom|center">
+
+        <TextView
+            android:id="@+id/txtSobre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sobre"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/txtLoginJanela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_da_main"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold|normal"
+            android:onClick="abrirJanelaLogin"/>
+    </RelativeLayout>
+</RelativeLayout>

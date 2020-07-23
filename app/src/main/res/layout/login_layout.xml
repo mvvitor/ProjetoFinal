@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo"
+    tools:context=".Login_Activity">
+
+    <ImageView
+        android:id="@+id/imgSetaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:contentDescription="@string/seta" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:onClick="voltarJanelaLogin"
+            android:id="@+id/imglogoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/imagemlogo"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="120dp"
+        android:layout_marginStart="100dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtNome_AppLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/limos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:inputType="textEmailAddress"
+            android:maxLength="20"
+            android:text="@string/insira_seu_email"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal"
+            tools:ignore="TextViewEdits" />
+
+        <EditText
+            android:id="@+id/txtEmailLoginCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/borda_sem_cor"
+            android:hint="@string/insira_um_email"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textColorHint="#000"
+            android:textSize="25sp"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/txtSenhaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginStart="10sp"
+            android:text="@string/senha"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <EditText
+            android:id="@+id/txtSenhaLoginCampo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:background="@drawable/borda_sem_cor"
+            android:hint="@string/insira_uma_senha"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textColorHint="#000"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="abrirJanelaPerfil"
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:background="@drawable/botao_com_cor"
+            android:hint="@string/btn_entrar"
+            android:textColorHint="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold|normal" />
+    </LinearLayout>
+</RelativeLayout>

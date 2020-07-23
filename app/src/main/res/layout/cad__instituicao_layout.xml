@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo_cadastro"
+    android:orientation="vertical"
+    tools:context=".Cad_Instituicao_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtEmailCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/e_mail_cadastro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtNomeCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmailCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtSenhaCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNomeCadCampoInstituicao"
+            android:layout_marginTop="12dp"
+            android:text="@string/senha_cadastro_instituicao"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtSenhaCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSenhaCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtConfirmarSenhaCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSenhaCadCampoInstituicao"
+            android:layout_marginTop="12dp"
+            android:text="@string/confirmar_senha_cadastro_instituicao"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtConfirmarSenhaCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmarSenhaCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtCnpjCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmarSenhaCadCampoInstituicao"
+            android:layout_marginTop="12dp"
+            android:text="@string/cnpj_cadastro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtCnpjCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCnpjCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtNomeDaEmpresaCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCnpjCadCampoInstituicao"
+            android:layout_marginTop="12dp"
+            android:text="@string/nome_do_estabelecimento_cadastro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtNomeDaEmpresaCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNomeDaEmpresaCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtTelefoneCadInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNomeDaEmpresaCadCampoInstituicao"
+            android:layout_marginTop="12dp"
+            android:text="@string/telefone_cadastro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtTelefoneCadCampoInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTelefoneCadInstituicao"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btnVoltarCad"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTelefoneCadCampoInstituicao"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/voltar"
+            android:onClick="janelaVoltar"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal"
+            tools:ignore="UnknownIdInLayout" />
+
+        <Button
+            android:id="@+id/btnAvancarCad"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnVoltarCad"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btnVoltarCad"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/proximo"
+            android:onClick="abrirJanelaCad"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+    </RelativeLayout>
+</LinearLayout>

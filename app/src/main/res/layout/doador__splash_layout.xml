@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/plano_de_fundo"
+    tools:context=".Doador_Splash_Activity">
+
+    <ImageView
+        android:id="@+id/imgSetaSplashDoadorFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:contentDescription="@string/seta" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imglogoSplashDoadorFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:onClick="JanelaFinalDoador"
+            android:contentDescription="@string/imglogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="120dp"
+        android:layout_marginStart="100dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtNome_AppSplashFinalDoador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/limos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTextoSplashFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/agradecemos_sua_doa_o_enviaremos_ao_seu_e_mail_o_local_mais_pr_ximo_para_voc_poder_levar_a_sua_doacao"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="italic|normal" />
+
+        <TextView
+            android:id="@+id/txtTextoSobreSplashFinalDoador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTextoSplashFinal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/n_s_da_equipe_limos_agradecemos_sua_colabora_o"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="italic|normal" />
+
+        <ImageView
+            android:id="@+id/imgLogoDoisSplashFinalDoador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtTextoSobreSplashFinalDoador"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="30dp"
+            android:src="@drawable/logo_sobre"
+            android:contentDescription="@string/logoyas" />
+    </RelativeLayout>
+
+</RelativeLayout>

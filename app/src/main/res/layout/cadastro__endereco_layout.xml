@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo_cadastro"
+    tools:context=".Cadastro_Endereco_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtCadastroEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cadastro_de_endereco"
+            android:textColor="#E93B4755"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtCadastroEnderecoPequeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCadastroEndereco"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/preencha_o_endereco_do_estabelecimento"
+            android:textColor="#CB3B4755"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtCepCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCadastroEnderecoPequeno"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cep"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtCepCampoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCepCadastro"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtLogradouroCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCepCampoCadastro"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/logradouro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtLogradouroCampoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLogradouroCadastro"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtNumeroCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLogradouroCampoCadastro"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/numero"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtNumeroCampoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNumeroCadastro"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtComplementoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNumeroCampoCadastro"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/complemento"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtComplementoCampoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtComplementoCadastro"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtBairroCadastroEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtComplementoCampoCadastro"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/bairro"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtBairroCampoCadastroEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBairroCadastroEmpresa"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtCidadeCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBairroCampoCadastroEmpresa"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/cidade"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/txtCidadeCadastroCampo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCidadeCadastro"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txtEstadoCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtCidadeCadastro"
+            android:layout_marginStart="138dp"
+            android:layout_toEndOf="@+id/txtCidadeCadastro"
+            android:text="@string/estado"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="#CB3B4755"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEstadoCadastroCampo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEstadoCadastro"
+            android:layout_alignTop="@id/txtCidadeCadastroCampo"
+            android:layout_marginStart="112dp"
+            android:layout_toEndOf="@id/txtCidadeCadastroCampo"
+            android:background="@drawable/caixa_sem_cor"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btnVoltarCadastro"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEstadoCadastroCampo"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/voltar"
+            android:onClick="voltarJanelaCadastro"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:onClick="abrirJanelaPerfil"
+            android:id="@+id/btnAvancarCadastro"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnVoltarCadastro"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btnVoltarCadastro"
+            android:background="@drawable/botao_cadastro_cor"
+            android:hint="@string/finalizar"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold|normal" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/doacoesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/fundo_doacoes"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard1"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="@string/doa_o_de_60_cestas_b_sicas_na_regi_o_do_graja"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard2"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCard1"
+                android:layout_marginStart="10sp"
+                android:text="@string/foi_registrado_1200_doa_es_no_ultimo_m_s"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard3"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCard1"
+                android:layout_marginStart="10sp"
+                android:text="@string/foi_doado_um_total_de_900_cestas_b_sicas_no_ultimo_m_s"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard4"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCard1"
+                android:layout_marginStart="10sp"
+                android:text="@string/doa_o_de_30_cestas_b_sicas_na_regi_o_da_cidade_dutra"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard5"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCard1"
+                android:layout_marginStart="10sp"
+                android:text="@string/doa_o_de_100_cestas_b_sicas_na_regi_o_de_parais_polis"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#065ABD"
+            app:cardBackgroundColor="#065ABD"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <TextView
+                android:id="@+id/txtCard6"
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCard1"
+                android:layout_marginStart="10sp"
+                android:text="@string/foi_registrado_500_doa_es_na_ultima_semana"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+

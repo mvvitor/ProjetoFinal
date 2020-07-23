@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plano_de_fundo"
+    tools:context=".Splash_Sobre_Activity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:onClick="janelaVoltarSobre"
+        android:id="@+id/imgSetaSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:contentDescription="@string/seta" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imglogoSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/imagemlogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="120dp"
+        android:layout_marginStart="100dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/imgNome_AppSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/limos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSplashFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/nos_da_limos_intermediamos_a_doacao_entre_o_doador_e_o_instituto_que_recebera_a_doacao_visamos_ter_como_objetivo_ajudar_na_facilitacao_na_distribuicao_de_alimentos_nas_comunidades_carentes_diante_as_complicacoes_da_pandemia_do_covid_19"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="italic|normal" />
+    </RelativeLayout>
